@@ -75,6 +75,13 @@ def topping1(dict):
     topping1({})  {"bread": "butter"} returns {"bread": "butter"}
     topping1({"pancake": "syrup"}) returns {"bread": "butter", "pancake": "syrup"}
     """
+
+    dict['bread'] = 'butter'
+
+    if 'ice cream' in dict:
+        dict['ice cream'] = 'cherry'
+        
+    return dict
     
 
 def friend_list(friend_dictionary):
